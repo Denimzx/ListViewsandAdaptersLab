@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnRevisarPublicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="revisarPublicaciones"
+            android:text="Publicaciones Disponibles" />
+
+        <Button
+            android:id="@+id/btnAceptarSolicitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:onClick="aplicarSolicitud"
+            android:text="Aplicar Solicitud" />
+
+        <Button
+            android:id="@+id/btnEnviarUbicación"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:onClick="enviarUbicacion"
+            android:text="Enviar ubicación" />
+        <Button
+            android:id="@+id/btnMisCargas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:onClick="verCargas"
+            android:text="Ver mis cargas" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

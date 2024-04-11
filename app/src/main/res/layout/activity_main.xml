@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnPublicarCarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="abrirFormulario"
+        android:text="Publicar Carga" />
+
+    <Button
+        android:id="@+id/btnRevisarPublicaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:onClick="revisarPublicaciones"
+        android:text="Revisar Publicaciones" />
+
+    <Button
+        android:id="@+id/btnAceptarSolicitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:onClick="abrirBuscarSolicitud"
+        android:text="Aceptar Solicitud" />
+
+    <Button
+        android:id="@+id/btnEnviarUbicación"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:onClick="enviarUbicacion"
+        android:text="Enviar ubicación" />
+
+</RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AplicarSolicitud"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textPublicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplicar a carga:" />
+
+        <!-- EditText para ingresar el ID de la publicación a eliminar -->
+        <EditText
+            android:id="@+id/editIdPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPublicaciones"
+            android:layout_marginTop="16dp"
+            android:hint="Id de la publicación" />
+        <EditText
+            android:id="@+id/editNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editIdPublicacion"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre completo" />
+
+        <EditText
+            android:id="@+id/editExperiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editNombreCompleto"
+            android:layout_marginTop="16dp"
+            android:hint="Tiempo de experiencia" />
+        <EditText
+            android:id="@+id/editCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editExperiencia"
+            android:layout_marginTop="16dp"
+            android:hint="Correo" />
+        <EditText
+            android:id="@+id/editIdentificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editCorreo"
+            android:layout_marginTop="16dp"
+            android:hint="Identificacion" />
+        <EditText
+            android:id="@+id/editNumeroCel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editIdentificacion"
+            android:layout_marginTop="16dp"
+            android:hint="Número celular" />
+        <EditText
+            android:id="@+id/editDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editNumeroCel"
+            android:layout_marginTop="16dp"
+            android:hint="Dirección" />
+        <EditText
+            android:id="@+id/editAdicionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editDireccion"
+            android:layout_marginTop="16dp"
+            android:hint="Información Adicional" />
+
+        <!-- Botón para eliminar la publicación -->
+        <Button
+            android:id="@+id/btnAplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editAdicionalInfo"
+            android:layout_marginTop="16dp"
+            android:text="Aplicar a Carga"
+            android:onClick="aplicar" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

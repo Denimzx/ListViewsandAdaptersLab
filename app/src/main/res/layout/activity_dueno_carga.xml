@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnPublicarCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="abrirFormulario"
+            android:text="Publicar Carga" />
+
+        <Button
+            android:id="@+id/btnRevisarPublicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:onClick="revisarPublicadas"
+            android:text="Revisar Publicaciones" />
+
+        <Button
+            android:id="@+id/btnEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:onClick="verEstados"
+            android:text="Estado Publicaciones" />
+
+        <Button
+            android:id="@+id/btnAsignar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:onClick="asignarCarga"
+            android:text="Asignar Carga" />
+        <Button
+            android:id="@+id/btnSolicitarUbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:onClick="solicitarUbi"
+            android:text="Solicitar ubicacion" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

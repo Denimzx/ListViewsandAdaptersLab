@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Asignar"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textPublicaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asignar carga:" />
+
+        <!-- EditText para ingresar el ID de la publicación a eliminar -->
+        <EditText
+            android:id="@+id/editId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPublicaciones"
+            android:layout_marginTop="16dp"
+            android:hint="ID de la Publicación" />
+
+        <EditText
+            android:id="@+id/editConductor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editId"
+            android:layout_marginTop="16dp"
+            android:hint="Email del conductor" />
+
+        <!-- Botón para eliminar la publicación -->
+        <Button
+            android:id="@+id/btnAsignarCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editConductor"
+            android:layout_marginTop="16dp"
+            android:text="Asignar Carga"
+            android:onClick="asignarCarga" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

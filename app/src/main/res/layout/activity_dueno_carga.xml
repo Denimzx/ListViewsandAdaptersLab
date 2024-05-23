@@ -2,7 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back">
+    </androidx.appcompat.widget.Toolbar>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +25,7 @@
             android:id="@+id/btnPublicarCarga"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="110dp"
             android:onClick="abrirFormulario"
             android:text="Publicar Carga" />
 
@@ -20,7 +33,7 @@
             android:id="@+id/btnRevisarPublicaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="170dp"
             android:onClick="revisarPublicadas"
             android:text="Revisar Publicaciones" />
 
@@ -28,7 +41,7 @@
             android:id="@+id/btnEstado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="230dp"
             android:onClick="verEstados"
             android:text="Estado Publicaciones" />
 
@@ -36,14 +49,14 @@
             android:id="@+id/btnAsignar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="290dp"
             android:onClick="asignarCarga"
             android:text="Asignar Carga" />
         <Button
             android:id="@+id/btnSolicitarUbi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="350dp"
             android:onClick="solicitarUbi"
             android:text="Solicitar ubicacion" />
 

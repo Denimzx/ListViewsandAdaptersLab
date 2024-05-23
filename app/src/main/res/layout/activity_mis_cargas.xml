@@ -17,7 +17,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tus cargas asignadas:" />
+        <EditText
+            android:id="@+id/editIdMensajeCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPublicaciones"
+            android:hint="Ingrese ID de la publicación" />
+        <EditText
+            android:id="@+id/editMensajeCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el mensaje"
+            android:layout_below="@id/editIdMensajeCon" />
 
+        <Button
+            android:id="@+id/btnEnviarMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editMensajeCon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Enviar"
+            android:onClick="enviarMensajeCon"
+            />
+        <!-- Nuevo EditText para ingresar el ID de la carga -->
+        <EditText
+            android:id="@+id/editIdCargacon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnEnviarMs"
+            android:layout_marginTop="16dp"
+            android:hint="Ingrese el ID de la carga" />
+
+        <!-- Nuevo botón para marcar como entregado -->
+        <Button
+            android:id="@+id/btnEntregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editIdCargacon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Marcar como entregado"
+            android:onClick="entregar" />
 
 
     </RelativeLayout>

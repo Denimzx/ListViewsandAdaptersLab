@@ -2,7 +2,21 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back">
+    </androidx.appcompat.widget.Toolbar>
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +26,7 @@
             android:id="@+id/btnRevisarPublicaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="110dp"
             android:onClick="revisarPublicaciones"
             android:text="Publicaciones Disponibles" />
 
@@ -20,7 +34,7 @@
             android:id="@+id/btnAceptarSolicitud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="230dp"
             android:onClick="aplicarSolicitud"
             android:text="Aplicar Solicitud" />
 
@@ -28,16 +42,34 @@
             android:id="@+id/btnEnviarUbicación"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="170dp"
             android:onClick="enviarUbicacion"
             android:text="Enviar ubicación" />
         <Button
             android:id="@+id/btnMisCargas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="290dp"
             android:onClick="verCargas"
             android:text="Ver mis cargas" />
+
+        <Button
+            android:id="@+id/btnRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtIdCarga"
+            android:onClick="verRuta"
+            android:text="Ver ruta" />
+        <EditText
+            android:id="@+id/edtIdCarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:hint="ID de carga"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnMisCargas" />
+
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

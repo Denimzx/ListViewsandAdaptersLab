@@ -2,6 +2,7 @@ package co.edu.unipiloto.transporteapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -13,6 +14,14 @@ public class RolDueno extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dueno_carga);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        toolbar.setNavigationOnClickListener(view -> onBackPressed());
     }
 
     public void abrirFormulario (View view){
@@ -37,6 +46,7 @@ public class RolDueno extends AppCompatActivity {
         Intent intent = new Intent(this, SolicitarUbicacion.class);
         startActivity(intent);
     }
+
 
 
 

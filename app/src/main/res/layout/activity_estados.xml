@@ -5,31 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Estado de Publicaciones"
+        app:titleTextColor="#ffffff"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".RevisarPublicacionesActivity"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:context=".Estados">
 
         <TextView
             android:id="@+id/textPublicaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Estado de publicaciones:" />
+            android:text="Estado de publicaciones:"
+            android:layout_marginTop="100dp" />
 
         <EditText
-            android:id="@+id/editId"
+            android:id="@+id/editIdMensaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textPublicaciones"
             android:hint="Ingrese ID de la publicación" />
+
         <EditText
             android:id="@+id/editMensaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ingrese el mensaje"
-            android:layout_below="@id/editId" />
+            android:layout_below="@id/editIdMensaje"
+            android:hint="Ingrese el mensaje" />
 
         <Button
             android:id="@+id/btnEnviarMs"
@@ -39,12 +48,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
             android:text="Enviar"
-            android:onClick="enviarMsj"
-            />
-
-
-
+            android:onClick="enviarMensaje" />
 
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

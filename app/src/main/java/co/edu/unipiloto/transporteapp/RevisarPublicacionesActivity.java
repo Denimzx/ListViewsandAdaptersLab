@@ -1,5 +1,6 @@
 package co.edu.unipiloto.transporteapp;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -16,12 +17,11 @@ public class RevisarPublicacionesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_revisar_publicaciones);
+        setContentView(R.layout.activity_estados);
         dbHelper = new DatabaseHelper(this);
 
         mostrarPublicaciones();
     }
-
     private void mostrarPublicaciones() {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String[] projection = {
